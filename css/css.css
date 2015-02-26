@@ -1,0 +1,199 @@
+body {
+	background-image: url("../img/backgroung.png");
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	    -ms-background-size: cover;
+	     -o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	padding: 0;
+	margin: 0;
+}
+
+div.profile {
+	opacity: 0;
+}
+
+div.profile-animation {
+	background-color: rgba(200, 200, 200, 0.50);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: absolute;
+	opacity: 0;
+
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	    -ms-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	     -o-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	        box-shadow: 0 0 10px rgba(0,0,0,0.4);
+
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	    -ms-border-radius: 3px;
+	     -o-border-radius: 3px;
+	        border-radius: 3px;
+	border: 1px solid rgba(255,255,255,0.1);
+
+	-webkit-animation: fadein 2s;
+       -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s;
+         -o-animation: fadein 2s;
+            animation: fadein 2s;
+    -webkit-animation-fill-mode: forwards;
+       -moz-animation-fill-mode: forwards;
+        -ms-animation-fill-mode: forwards;
+         -o-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+div.profile-head h1.name {
+	font-family: Verdana;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+a.btn {
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	border-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 4px;
+	padding-bottom: 4px;
+
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.4);
+	   -moz-box-shadow: 0 0 4px rgba(0,0,0,0.4);
+	    -ms-box-shadow: 0 0 4px rgba(0,0,0,0.4);
+	     -o-box-shadow: 0 0 4px rgba(0,0,0,0.4);
+	        box-shadow: 0 0 4px rgba(0,0,0,0.4);
+
+	color: #ffffff;
+}
+
+a.btn.email {
+	background-image: url("../img/email.png");
+	background-color: #428bca;
+	background-position: 6px;
+}
+
+a.btn.facebook {
+	background-image: url("../img/facebook.png");
+	background-color: #3b5998;
+}
+
+a.btn.twitter {
+	background-image: url("../img/twitter.png");
+	background-color: #33ccff;
+}
+
+a.btn.linkedin {
+	background-image: url("../img/linkedin.png");
+	background-color: #014cb7;
+	background-position: left 4px bottom 4px;
+}
+
+a.btn.lattes {
+	background-image: url("../img/lattes.png");
+	background-color: #326c99;
+}
+
+a.btn.github {
+	background-image: url("../img/github.png");
+	background-color: #000000;
+}
+
+a.btn:hover {
+	border-color: transparent;
+
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	    -ms-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	     -o-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	        box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+@media (min-width: 765px) {
+	div.profile-animation {
+		top: 20%;
+		left: 4%;
+		padding: 25px;
+		padding-top: 10px;
+		padding-bottom: 30px;
+		width: auto;
+	}
+
+	div.profile-head h1.name {
+		font-size: 72px;
+	}
+
+	div.btn-group-small {
+		visibility: collapse;
+		height: 0px;
+	}
+}
+
+@media (max-width: 765px) {
+	div.profile-animation {
+		position: absolute;
+		top: 20%;
+		left: 2%;
+		padding: 15px;
+		padding-top: 0px;
+		padding-bottom: 20px;
+		width: 310px;
+	}
+
+	div.profile-head h1.name {
+		font-size: 27px;
+		height: 25px;
+		padding-left: 10px;
+	}
+
+	div.btn-group-big {
+		visibility: collapse;
+		height: 0px;
+	}
+
+	a.btn {
+		background-position: 0px;
+	}
+
+	a.btn.email {
+		background-position: center;
+	}
+
+	a.btn.linkedin {
+		background-position: 0px;
+	}
+}
