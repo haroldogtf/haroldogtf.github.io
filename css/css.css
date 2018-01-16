@@ -1,5 +1,5 @@
 body {
-	background-image: url("../img/backgroung.png");
+	background-image: url("../img/background.png");
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 	    -ms-background-size: cover;
@@ -123,14 +123,14 @@ a.btn.linkedin {
 	background-position: left 4px bottom 4px;
 }
 
-a.btn.lattes {
-	background-image: url("../img/lattes.png");
-	background-color: #326c99;
-}
-
 a.btn.github {
 	background-image: url("../img/github.png");
 	background-color: #000000;
+}
+
+a.btn.stack {
+	background-image: url("../img/stack.png");
+	background-color: #e6853d;
 }
 
 a.btn:hover {
@@ -143,7 +143,7 @@ a.btn:hover {
 	        box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-@media (min-width: 765px) {
+@media (min-width: 780px) {
 	div.profile-animation {
 		top: 20%;
 		left: 4%;
@@ -154,7 +154,7 @@ a.btn:hover {
 	}
 
 	div.profile-head h1.name {
-		font-size: 72px;
+		font-size: 74px;
 	}
 
 	div.btn-group-small {
@@ -163,7 +163,7 @@ a.btn:hover {
 	}
 }
 
-@media (max-width: 765px) {
+@media (max-width: 780px) {
 	div.profile-animation {
 		position: absolute;
 		top: 20%;
