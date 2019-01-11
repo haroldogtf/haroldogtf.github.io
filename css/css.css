@@ -164,6 +164,10 @@ a.btn:hover {
 }
 
 @media (max-width: 780px) {
+	body {
+		background-position-x: 77%;
+	}
+
 	div.profile-animation {
 		position: absolute;
 		top: 20%;
